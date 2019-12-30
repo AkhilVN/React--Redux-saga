@@ -1,5 +1,4 @@
-git flow init -d
-Following steps to then install and run the prototype:
+
 
 npm install
 npm start
