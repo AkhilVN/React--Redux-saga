@@ -26,7 +26,7 @@ class Details extends Component {
           </tr>
           <tr>
             <td>{id}</td>
-            {console.log("akhill:", this.props.postId)}
+            {console.log("postId:", this.props.postId)}
           </tr>
         </Table>
       </div>
