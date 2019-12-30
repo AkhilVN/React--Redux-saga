@@ -18,7 +18,6 @@ function* workerSaga() {
 }
 function* workerSagaDetail(action) {
   const payload = yield call(getDataDetail, action.payload.ID);
-  console.log("kesla:",payload)
   yield put({ type: "DATA_LOADED1", payload });
 }
 
@@ -31,7 +30,7 @@ export function getData() {
     })
     .catch(error => {
       console.log(
-        "123-------------Network error to be solved--------------------"
+        "-------------Network error to be solved--------------------"
       );
       return error;
     });
@@ -45,7 +44,7 @@ export function getDataDetail( ID) {
     })
     .catch(error => {
       console.log(
-        "123-------------Network error to be solved--------------------"
+        "-------------Network error to be solved--------------------"
       );
       return error;
     });
